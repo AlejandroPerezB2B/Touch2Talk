@@ -2,6 +2,11 @@
 
 This document describes the MATLAB procedure used to create independent four-talker speech-masker segments from the Spanish **Glissando-sp** corpus.
 
+Garrido, J. M., Escudero, D., Aguilar, L., Cardeñoso, V., Rodero, E., de-la-Mota, C.,
+González, C., Rustullet, S., Larrea, O., Laplaza, Y., Vizcaíno, F., Cabrera, M., Bonafonte, A.
+(2013). Glissando: a corpus for multidisciplinary prosodic studies in Spanish and Catalan,
+Language Resources and Evaluation, 47, 4, 945-971. DOI 10.1007/s10579-012-9213-0.
+
 ## Source corpus
 
 The masker is constructed from the **News** subcorpus of Glissando-sp.
