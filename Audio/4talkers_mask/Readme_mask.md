@@ -29,31 +29,6 @@ The four selected speakers are professional news broadcasters:
 | `sp_m12r` | Male | News broadcaster |
 | `sp_m14r` | Male | News broadcaster |
 
-The expected source directory is:
-
-```text
-E:\S0406\News
-```
-
-with the following structure:
-
-```text
-E:\S0406\News\
-    sp_f11r\Prosodic\*.fix.wav
-    sp_f13r\Prosodic\*.fix.wav
-    sp_m12r\Prosodic\*.fix.wav
-    sp_m14r\Prosodic\*.fix.wav
-```
-
-The expected filenames follow the pattern:
-
-```text
-sp_f11r_prn01.fix.wav ... sp_f11r_prn36.fix.wav
-sp_f13r_prn01.fix.wav ... sp_f13r_prn36.fix.wav
-sp_m12r_prn01.fix.wav ... sp_m12r_prn36.fix.wav
-sp_m14r_prn01.fix.wav ... sp_m14r_prn36.fix.wav
-```
-
 ## General procedure
 
 The first processing stage creates **36 independent four-talker masker segments**.
@@ -236,12 +211,6 @@ masker_set_03.wav
 masker_set_36.wav
 ```
 
-These are stored by default in:
-
-```text
-E:\S0406\News\Four_talker_masker_sets
-```
-
 The output WAV files are written at 32-bit depth.
 
 ## Processing log
@@ -279,20 +248,3 @@ The MATLAB script automatically checks that:
 - the summed four-talker signal does not clip
 
 Unexpected multichannel files or sampling-rate mismatches generate an error rather than being silently converted or resampled.
-
-## Subsequent processing
-
-The current processing stage stops after creation of the 36 independent four-talker masker segments.
-
-A subsequent MATLAB script will:
-
-1. Load the 36 masker segments.
-2. Concatenate them into one continuous four-talker masker.
-3. Calculate the RMS of the complete concatenated masker.
-4. Apply a single final RMS normalization to the complete masker.
-5. Verify peak amplitude and absence of clipping.
-6. Save the final continuous masker and its processing information.
-
-Importantly, the 36 individual four-talker segments will **not** be independently normalized after summation. Final normalization will be performed only once, after the 36 segments have been concatenated.
-
-The resulting continuous masker will subsequently provide the source from which masker excerpts are selected for the experimental target sentences. The participant-specific target-to-masker ratio will be imposed at the later target/masker mixing stage.
