@@ -31,6 +31,6 @@ The function:
   `17 - 3.9.wav` → `3.9.wav`
 
 - Performs post-processing checks on sample rate, channel count, duration, RMS, and peak amplitude.
-- Generates [haptic_stimulus_lists.xlsx](`target_audio_processing_log.csv`) [Link text](filename.ext), which preserves the relationship between each original file and its processed version and records the relevant audio-processing information.
+- Generates [haptic_stimulus_lists.xlsx](`target_audio_processing_log.csv`), which preserves the relationship between each original file and its processed version and records the relevant audio-processing information.
 
 The original corpus is left **untouched**. The resulting directory contains the standardized and uniquely named WAV files required by the experimental and calibration stimulus lists.
