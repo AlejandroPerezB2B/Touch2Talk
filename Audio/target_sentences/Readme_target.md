@@ -1,6 +1,6 @@
 ### `create_target_sentence_manifest.m`
 
-Validates the original Spanish target-sentence audio corpus and creates the manifests used in subsequent stimulus preparation.
+Validates the original Spanish target-sentence audio corpus (https://www.uv.es/~cervera/SPIN.htm) and creates the manifests used in subsequent stimulus preparation.
 
 The script:
 
