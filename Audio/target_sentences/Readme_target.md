@@ -14,3 +14,23 @@ The script:
 - Generates CSV and MATLAB manifests describing the complete corpus, valid HP–LP pairs, excluded/incomplete pairs, and summary information for each physical `FORMA`.
 
 This script performs **validation and documentation only**. It does not modify, resample, normalize, rename, move, or copy the original audio files.
+
+### `prepare_target_audio_common_folder.m`
+
+Prepares the validated Spanish target-sentence recordings for use in the PsychoPy experiment by creating a single, standardized audio directory.
+
+The function:
+
+- Reads the WAV files from the six original `FORMA` directories.
+- Verifies that the expected **296 existing recordings** are present and that the four known missing recordings (`3.6`, `4b.4`, `3.10`, and `3.21`) remain absent.
+- Extracts the stimulus code from each original filename and checks that all codes are unique.
+- Standardizes all recordings to **44.1 kHz, mono**. Recordings already at 44.1 kHz are retained at their original sampling rate, while 16-kHz recordings are resampled to 44.1 kHz.
+- Does **not** normalize, trim, or otherwise intentionally alter the amplitude or duration of the stimuli.
+- Copies the processed recordings to a common PsychoPy-ready directory while simplifying the filenames by removing the original physical item-number prefix. For example:
+
+  `17 - 3.9.wav` → `3.9.wav`
+
+- Performs post-processing checks on sample rate, channel count, duration, RMS, and peak amplitude.
+- Generates [haptic_stimulus_lists.xlsx](`target_audio_processing_log.csv`) [Link text](filename.ext), which preserves the relationship between each original file and its processed version and records the relevant audio-processing information.
+
+The original corpus is left **untouched**. The resulting directory contains the standardized and uniquely named WAV files required by the experimental and calibration stimulus lists.
