@@ -7,7 +7,3 @@ This repository contains the stimulus-processing code, and analysis resources de
 The experimental approach builds on previous work showing that vibrotactile signals derived from the temporal envelope of speech can support speech perception in multi-talker noise (Răutu et al., 2023).
 
 The materials and code associated with this project are archived on Zenodo **[doi:10.5281/zenodo.23159385](https://doi.org/10.5281/zenodo.23159385)**.
-
-### Reference
-
-Răutu, I. S., De Tiège, X., Jousmäki, V., Bourguignon, M., & Bertels, J. (2023). Speech-derived haptic stimulation enhances speech recognition in a multi-talker background. *Scientific Reports, 13*, 16621. https://doi.org/10.1038/s41598-023-43644-3
