@@ -17,7 +17,7 @@ For each speech stimulus, the function:
 1. Converts the audio to mono if necessary.
 2. Normalizes all speech stimuli to a common RMS level.
 3. Ensures that the same RMS target is used across the complete stimulus set.
-4. Filters the normalized speech through a 31-channel gammatone filter bank.
+4. Filters the normalized speech through a [31-channel gammatone filter bank](https://github.com/IoSR-Surrey/MatlabToolbox) .
 5. Uses centre frequencies spaced evenly on the Mel scale between 150 and 7000 Hz.
 6. Uses the IoSR implementation `iosr.auditory.gammatoneFast`.
 7. Applies `align=true` in `gammatoneFast` to compensate for frequency-dependent filter delays.
@@ -33,5 +33,6 @@ The resulting haptic signal is:
 
 ```text
 haptic(t) = global_gain × envelope(t) × sin(2π × 150 × t)
+```
 
 A link to the haptic stimuli dataset is to be included.
