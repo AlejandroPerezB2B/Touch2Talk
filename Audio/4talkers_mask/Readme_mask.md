@@ -29,7 +29,8 @@ The four selected speakers are professional news broadcasters:
 | `sp_m12r` | Male | News broadcaster |
 | `sp_m14r` | Male | News broadcaster |
 
-## General procedure implemented in the function `create_four_talker_masker_sets.m`
+## General procedure as implemented in the function:
+`create_four_talker_masker_sets.m`
 
 The first processing stage creates **36 independent four-talker masker segments**.
 
