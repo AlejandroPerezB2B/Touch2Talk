@@ -11,11 +11,11 @@ Additional inconsistencies in the stimulus identification codes were corrected b
 
 Further inspection of the original audio recordings revealed additional issues, including differences in sampling rates (16 kHz and 44.1 kHz) and recordings containing clipped speech segments. Consequently, we decided to generate a new audio version of the Spanish sentences using Google Cloud Text-to-Speech, with the Spanish (es) language setting and a female synthetic voice.
 
-The newly generated target speech recordings will be made available in a separate dataset:
+The newly generated target speech recordings will be made available in a separate dataset: (link to be included)
 
-Target speech stimuli dataset — link to be added
+##### Note about: Target speech stimuli dataset
 
-Importantly, the experimental stimulus lists had already been constructed based on the availability and structure of the original Cervera and González-Alvarez recordings. To preserve the established stimulus allocation and counterbalancing scheme, the four sentences missing from the original audio archive (3.6, 3.10, 3.21, and 4b.4) remain excluded from the main experiment, even though a new synthetic audio version could be generated. Their four corresponding available counterparts (3b.6, 3b.10, 3b.21, and 4.4) are used exclusively for auditory calibration.
+Importantly, we had already constructed the experimental stimulus lists based on the availability and structure of the original Cervera and González-Alvarez recordings. To preserve the established stimulus allocation and counterbalancing scheme, the four sentences missing from the original audio archive (3.6, 3.10, 3.21, and 4b.4) remain excluded from the main experiment, even though a new synthetic audio version could be generated. We use their four corresponding available counterparts (3b.6, 3b.10, 3b.21, and 4.4) exclusively for auditory calibration.
 
 Similarly, the sentence pair containing the mismatched final target words (5.25 and 5b.25) is retained in its original textual form but reserved exclusively for calibration rather than the main experiment.
 
