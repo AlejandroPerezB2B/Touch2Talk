@@ -33,3 +33,5 @@ The resulting haptic signal is:
 
 ```text
 haptic(t) = global_gain × envelope(t) × sin(2π × 150 × t)
+
+A link to the haptic stimuli dataset is to be included.
