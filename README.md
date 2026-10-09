@@ -7,4 +7,3 @@ This repository contains the stimulus-processing code, and analysis resources de
 The experimental approach builds on previous work showing that vibrotactile signals derived from the temporal envelope of speech can support speech perception in multi-talker noise (Răutu et al., 2023).
 
 The pre-print associated with this project is archived on Zenodo **[doi:10.5281/zenodo.23159385](https://doi.org/10.5281/zenodo.23159385)**.
-\[ special \]
