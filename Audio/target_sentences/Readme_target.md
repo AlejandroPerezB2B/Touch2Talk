@@ -4,7 +4,7 @@ The target sentences used in this project are based on the Spanish Speech Percep
 
 The file [Nombres archivos audio_2026_10_06.doc](Nombres%20archivos%20audio_2026_10_06.doc), is an annotated and corrected version of the original sentence list. In this document:
 
-- Red text identifies sentences for which the corresponding recordings were missing from the original clean speech audio archive.\
+- Red text identifies sentences for which the corresponding recordings were missing from the original clean speech audio archive.
 - Bold text identifies an inconsistency in which the high-predictability and low-predictability versions of a sentence pair do not share the same final target word (5.25 and 5b.25: monje versus metal).
 
 Additional inconsistencies in the stimulus identification codes were corrected but are not individually marked.
