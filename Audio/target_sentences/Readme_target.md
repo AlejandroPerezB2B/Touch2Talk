@@ -1,3 +1,26 @@
+#### Preparation of the Spanish target speech stimuli
+
+The target sentences used in this project are based on the Spanish Speech Perception in Noise (SPIN) materials developed by Cervera and González-Alvarez (2010), available from the original [SPIN website](https://www.uv.es/~cervera/SPIN.htm).
+
+The file [Nombres archivos audio_2026_10_06.doc](Nombres archivos audio_2026_10_06.doc), is an annotated and corrected version of the original sentence list. In this document:
+
+- Red text identifies sentences for which the corresponding recordings were missing from the original clean speech audio archive.\
+- Bold text identifies an inconsistency in which the high-predictability and low-predictability versions of a sentence pair do not share the same final target word (5.25 and 5b.25: monje versus metal).
+
+Additional inconsistencies in the stimulus identification codes were corrected but are not individually marked.
+
+Further inspection of the original audio recordings revealed additional issues, including differences in sampling rates (16 kHz and 44.1 kHz) and recordings containing clipped speech segments. Consequently, we decided to generate a new audio version of the Spanish sentences using Google Cloud Text-to-Speech, with the Spanish (es) language setting and a female synthetic voice.
+
+The newly generated target speech recordings will be made available in a separate dataset:
+
+Target speech stimuli dataset — link to be added
+
+Importantly, the experimental stimulus lists had already been constructed based on the availability and structure of the original Cervera and González-Alvarez recordings. To preserve the established stimulus allocation and counterbalancing scheme, the four sentences missing from the original audio archive (3.6, 3.10, 3.21, and 4b.4) remain excluded from the main experiment, even though a new synthetic audio version could be generated. Their four corresponding available counterparts (3b.6, 3b.10, 3b.21, and 4.4) are used exclusively for auditory calibration.
+
+Similarly, the sentence pair containing the mismatched final target words (5.25 and 5b.25) is retained in its original textual form but reserved exclusively for calibration rather than the main experiment.
+
+The final allocation comprises 252 experimental sentences (126 high-predictability and 126 low-predictability) distributed across three balanced lists of 84 trials, together with 44 additional sentences reserved for auditory calibration. This preserves the original experimental design and counterbalancing structure while using newly synthesised, consistently prepared speech recordings.
+
 ### `create_target_sentence_manifest.m`
 
 Validates the original Spanish target-sentence audio corpus (https://www.uv.es/~cervera/SPIN.htm) and creates the manifests used in subsequent stimulus preparation.
