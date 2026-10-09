@@ -1,6 +1,6 @@
 #### Preparation of the Spanish target speech stimuli
 
-The target sentences used in this project are based on the Spanish Speech Perception in Noise (SPIN) materials developed by Cervera and González-Alvarez (2010), available from the original [SPIN website](https://www.uv.es/~cervera/SPIN.htm).
+The target sentences used in this project are based on the Spanish Speech Perception in Noise (SPIN) materials developed by Cervera and González-Alvarez (2010), available as audio (.wav) on [SPIN website](https://www.uv.es/~cervera/SPIN.htm).
 
 The file [Nombres archivos audio_2026_10_06.doc](Nombres%20archivos%20audio_2026_10_06.doc), is an annotated and corrected version of the original sentence list. In this document:
 
