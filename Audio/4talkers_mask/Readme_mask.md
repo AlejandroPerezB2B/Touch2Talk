@@ -29,8 +29,7 @@ The four selected speakers are professional news broadcasters:
 | `sp_m12r` | Male | News broadcaster |
 | `sp_m14r` | Male | News broadcaster |
 
-## General procedure as implemented in the function:
-`create_four_talker_masker_sets.m`
+## General procedure as implemented in the function `create_four_talker_masker_sets.m`
 
 The first processing stage creates **36 independent four-talker masker segments**.
 
@@ -249,3 +248,18 @@ The MATLAB script automatically checks that:
 - the summed four-talker signal does not clip
 
 Unexpected multichannel files or sampling-rate mismatches generate an error rather than being silently converted or resampled.
+
+### `resampling_masker_wav.m`
+
+Resamples the 36 four-talker masker WAV files to a common sampling rate of **44.1 kHz**, ensuring compatibility with the target speech stimuli.
+
+The script:
+
+- Reads all `masker_set_*.wav` files from the source directory.
+- Checks the original sampling rate of each recording.
+- Resamples recordings to **44,100 Hz** using MATLAB's `resample` function when necessary.
+- Leaves recordings already at 44.1 kHz unchanged.
+- Saves the processed files as **24-bit WAV** recordings in a separate output directory, preserving their original filenames.
+- Displays processing progress in the MATLAB Command Window.
+
+The original masker recordings remain **unchanged**. No additional normalization, trimming, or mixing is performed.
