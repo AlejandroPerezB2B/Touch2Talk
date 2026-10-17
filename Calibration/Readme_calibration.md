@@ -98,23 +98,23 @@ Thus, schematically:
 ```text
 Masker onset
 |
-|---- 500 ms onset ramp ----|
-|---- 500 ms full masker ---|
-                             Target onset
-                             |
-                             |---- target sentence ----|
-                                                      Target offset
-                                                      |
-                                                      |---- 500 ms full masker ---|
-                                                      |---- 500 ms offset ramp ----|
-                                                                                    Masker offset
+|--- 500 ms onset ramp ---|
+                          |--- 500 ms full masker --|
+                                                    Target onset
+                                                    |
+                                                    |--- target sentence ---|
+                                                                            Target offset
+                                                                            |
+                                                                            |--- 500 ms full masker --|
+                                                                                                      |--- 500 ms offset ramp ---|
+                                                                                                                                 Masker offset
 ```
 
 ### Definition and manipulation of TMR
 
-The level of the masker remains fixed during the adaptive staircase.
+The masker level remains fixed during the adaptive staircase.
 
-The TMR is manipulated only by changing the amplitude of the target sentence.
+The TMR is manipulated only by changing the target sentence amplitude.
 
 The target sentence and the masker are first referenced to the same RMS level. Therefore, a TMR of 0 dB corresponds operationally to equal RMS levels for the target sentence and the masker during the target-sentence interval.
 
